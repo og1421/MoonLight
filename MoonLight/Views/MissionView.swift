@@ -26,6 +26,7 @@ struct MissionView: View {
                         .scaledToFit()
                         .frame( maxWidth: geometry.size.width * 0.8)
                         .padding(.top)
+                        .accessibilityValue("\(mission.displayName) path")
                     
                     VStack(alignment: .leading){
                         Rectangle()
@@ -34,12 +35,14 @@ struct MissionView: View {
                             .padding(.vertical)
                         
                         Text("Lauch date: \(mission.fomattedLauchDate)")
+                            .accessibilityValue("Lauch date: \(mission.fomattedLauchDate != "N/A" ? mission.fomattedLauchDate : "Unknown")")
                         
                         Spacer()
                         
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
+                            .accessibilityLabel("Mission Highlights")
                         
                         Text(mission.description)
                         
@@ -64,6 +67,8 @@ struct MissionView: View {
                                 }
                             }
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("Crew")
                     }
                 }
                 .padding(.bottom)

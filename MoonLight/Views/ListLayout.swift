@@ -42,6 +42,8 @@ struct ListLayout: View {
                         .stroke(.lightBackground)
                 )
             }
+            .accessibilityLabel(mission.displayName)
+            .accessibilityAddTraits(.isButton)
         }
     }
 }
