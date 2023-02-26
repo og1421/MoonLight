@@ -9,7 +9,7 @@ It's an App created with SwiftUI, that brings all the Apollo missions to the Moo
 #### Landing page
 
 | <img src="https://github.com/og1421/MoonLight/blob/main/Imagens/ListGridView.png"
-height="375" width="187"> | <img src="https://github.com/og1421/MoonLight/blob/main/Imagens/ListView.png"
+height="375" width="187"> | <img src="https://github.com/og1421/MoonLight/blob/main/Imagens/ListView.png" height="375" width="187">
 
 #### Detail Mission View
 
